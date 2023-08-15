@@ -450,8 +450,8 @@ type RouteMessage struct {
 const (
 	DefaultBodyLimit            = 4 * 1024 * 1024
 	DefaultConcurrency          = 256 * 1024
-	DefaultReadBufferSize       = 4096
-	DefaultWriteBufferSize      = 4096
+	DefaultReadBufferSize       = 4 * 1024 * 1024
+	DefaultWriteBufferSize      = 4 * 1024 * 1024
 	DefaultCompressedFileSuffix = ".fiber.gz"
 )
 
